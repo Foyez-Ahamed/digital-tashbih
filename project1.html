@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+<!-- favicon -->
+<link rel="shortcut icon" href="./images/tasbih.png" type="image/x-icon">    
+<!-- tailwind and daisyUI cdn -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- customizing config cdn -->
+ <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d'
+          }
+        }
+      }
+    }
+  </script>
+
+<!-- customs css link -->
+  <style>
+   .font-poppins{
+    font-family: 'Poppins', sans-serif;
+   }
+  </style>
+
+</head>
+<body>
+   <!-- header section start here -->
+   <!-- class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10" -->
+   <header class="lg:m-10 m-5">
+
+    <div class="title-container">
+    <h1 class="text-5xl text-center font-extrabold text-purple-700">Digital Tasbih</h1>
+    </div>
+
+    <section class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <!-- SubhanAllah container -->
+            <div class="shadow-xl">
+                <div class="card-body items-center text-center gap-y-8">
+                  <h2 class="card-title text-2xl font-bold text-purple-600">Subhan-Allah</h2>
+                  <p id="subhanAllahDisplay" class="text-5xl text-purple-950">0</p>
+                  <div class="card-actions justify-end">
+                    <button id="subhanAllahIncrementbtn" class="btn bg-purple-800 text-white font-bold hover:bg-gray-700">Increment</button>
+                    <button id="subhanAlllahDecrementbtn" class="btn bg-purple-500 text-white font-bold hover:bg-gray-700">Decrement</button>
+                  </div>
+                </div>
+              </div>
+        <!-- SubhanAllah container -->
+        
+
+        <!-- Alhamdulillah container -->
+        <div class="shadow-xl">
+            <div class="card-body items-center text-center gap-y-8">
+              <h2 class="card-title text-2xl font-bold text-purple-600">Alhamdulillah</h2>
+              <p id="alhamdulillahDisplay" class="text-5xl text-purple-950">0</p>
+              <div class="card-actions justify-end">
+                <button id="alhamdulillahIncrementbtn" class="btn bg-purple-800 text-white font-bold hover:bg-gray-700">Increment</button>
+                <button id="alhamdulillahDecrementbtn" class="btn bg-purple-500 text-white font-bold hover:bg-gray-700">Decrement</button>
+              </div>
+            </div>
+          </div>
+       <!-- Alhamdulillah container -->
+
+       <!-- Allahuakbar container -->
+       <div class="shadow-xl">
+        <div class="card-body items-center text-center gap-y-8">
+          <h2 class="card-title text-2xl font-bold text-purple-600">Allahu-Akber</h2>
+          <p id="allahuakberDisplay" class="text-5xl text-purple-950">0</p>
+          <div class="card-actions justify-end">
+            <button id="allahuakberIncrementbtn" class="btn bg-purple-800 text-white font-bold hover:bg-gray-700">Increment</button>
+            <button id="allahuakberDecrementbtn" class="btn bg-purple-500 text-white font-bold hover:bg-gray-700">Decrement</button>
+          </div>
+        </div>
+      </div>
+         <!-- Allahuakbar container -->
+    </section>
+
+    <div class="text-center mt-10">
+        <button id="btn-reset" class="btn bg-purple-700 text-white font-bold hover:bg-gray-700 ">Reset All tasbih</button>
+    </div>
+
+   </header>
+   <!-- header section end here -->
+
+   <!-- main section start here -->
+   <main>
+
+   </main>
+   <!-- main section end here -->
+
+   <!-- footer section start here -->
+   <footer>
+
+   </footer>
+   <!-- footer section end here -->
+
+   <!-- javascript link -->
+   <script src="./js/project1.js"></script>
+</body>
+</html>
