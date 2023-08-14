@@ -1,0 +1,42 @@
+<!-- bubbling and capturing -->
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event Bubbling and capturing </title>
+    <!-- tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="grant-parent" class=" mt-10 w-[600px] mx-auto p-10 border border-red-500">
+        <h1>Grand parent</h1>
+        <div id="parent" class="border border-red-500 p-10">
+            <h1>Parent</h1>
+            <div id="child" class="border border-red-500 p-10">
+                <h1>child</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const grantParent = document.getElementById('grant-parent');
+        const parent =  document.getElementById('parent');
+        const child = document.getElementById('child');
+
+        grantParent.addEventListener('click', function(){
+          console.log('Grant parent');
+        }, true);
+
+        parent.addEventListener('click', function(){
+         console.log('Parent');
+        }, true);
+
+        child.addEventListener('click', function(event){
+          console.log('Child');
+        }, true);
+    </script>
+</body>
+</html>
